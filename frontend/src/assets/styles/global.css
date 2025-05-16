@@ -1,0 +1,79 @@
+:root {
+  /* Brand Colors */
+  --cws-primary: #4a6fa5; /* Main blue */
+  --cws-primary-dark: #3a5a8f; /* 10% darker for hover */
+  --cws-primary-darker: #2e4a7a; /* 20% darker for active */
+  --cws-secondary: #ff7e5f; /* Coral */
+  --cws-secondary-dark: #e66b4d; /* 10% darker */
+
+  /* Override Bootstrap's primary colors */
+  --bs-primary: var(--cws-primary);
+  --bs-primary-rgb: 74, 111, 165;
+  --bs-secondary: var(--cws-secondary);
+  --bs-secondary-rgb: 255, 126, 95;
+}
+
+/* ========== PRIMARY BUTTON ========== */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--cws-primary-dark);
+  --bs-btn-hover-border-color: var(--cws-primary-dark);
+  --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--cws-primary-darker);
+  --bs-btn-active-border-color: var(--cws-primary-darker);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+  background-color: var(--bs-primary);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+  border-width: 0px;
+}
+.btn-primary:hover {
+  background-color: var(--cws-primary-dark);
+}
+
+/* ========== SECONDARY BUTTON ========== */
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-secondary);
+  --bs-btn-border-color: var(--bs-secondary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--cws-secondary-dark);
+  --bs-btn-hover-border-color: var(--cws-secondary-dark);
+  --bs-btn-focus-shadow-rgb: var(--bs-secondary-rgb);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #d45a3d;
+  --bs-btn-active-border-color: #d45a3d;
+}
+
+/* ========== OUTLINE BUTTONS ========== */
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+}
+
+/* ========== LINK BUTTONS ========== */
+.btn-link {
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--cws-primary-dark);
+}
+
+.signupPage{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
